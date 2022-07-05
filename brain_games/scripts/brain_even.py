@@ -7,12 +7,12 @@ import prompt
 def main():
     """Welcoming user and asking for name."""
     print('Welcome to the Brain Games!')
-
+    
     """Ask player a name."""
     name = prompt.string('May I have your name? ')
     print('Hello, {0}!'.format(name))
     print('Answer "yes" if the number is even, otherwise answer "no".')
-
+    """Run script for Brain even game."""
     index = 1
     while index <= 3:
         random_number = randint(0, 100)
