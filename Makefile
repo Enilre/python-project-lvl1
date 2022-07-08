@@ -24,3 +24,9 @@ package-reinstall:
 
 brain-calc:
 	poetry run brain-calc
+
+brain-gdc:
+	poetry run brain-gdc
+
+brain-progression:
+	poetry run brain-progression
