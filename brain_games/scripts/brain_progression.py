@@ -1,8 +1,11 @@
 """Script for Brain progression."""
-from brain_games.games.greet import *  # welcominh user
-from brain_games.games.progression import prog
+
+from brain_games.games.question_answer_prog import question_answer
 
 def main():
+    """Run Script."""
+    question_answer()
+"""
     index = 1
     print('What number is missing in the progression?')
     while index <= 3:
@@ -15,7 +18,7 @@ def main():
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{a}'.\nLet's try again, {name}!")
             return
     print(f'Congratulations, {name}!')
-
+"""
 
 if __name__ == '__main__':
     main()
