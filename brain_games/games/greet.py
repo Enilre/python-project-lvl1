@@ -5,4 +5,3 @@ import prompt
 welcome_user = print('Welcome to the Brain Games!')
 name = prompt.string('May I have your name? ')
 hello_user = print(f'Hello, {name}!')
-

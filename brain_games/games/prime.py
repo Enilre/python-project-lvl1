@@ -1,14 +1,12 @@
-"""Script for Brain prime game."""
-from random import *
+"""Find prime number."""
 
-def prime(num):
 
-    correct_answer = True
-    d = 2
-    while d * d <= num:
-        if num % d == 0:
-            correct_answer = False
+def find_prime(num):
+    correct_answer = 'yes'
+    number = 2
+    while number * number <= num:
+        if num % number == 0:
+            correct_answer = 'no'
             break
-        d += 1
+        number += 1
     return correct_answer
-
