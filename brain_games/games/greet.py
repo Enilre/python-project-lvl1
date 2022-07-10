@@ -2,7 +2,7 @@
 #!/usr/bin/env python
 import prompt
 
-print('Welcome to the Brain Games!')
+welcome_user = print('Welcome to the Brain Games!')
 name = prompt.string('May I have your name? ')
-print('Hello, {0}!'.format(name))
+hello_user = print(f'Hello, {name}!')
 

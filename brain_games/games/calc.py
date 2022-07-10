@@ -17,14 +17,28 @@ def calc():
     correct_summing = str(a + b)
     correct_sub = str(a - b)
     correct_multiply = str(a * b)
+    random_expression = random.choice(expression)
+    print(f'Question: {a} {random_expression} {b}')
+    answer = input('Your answer: ')
 
+    correct_answer = 'yes'
+    if (random_expression == summing) and (answer != correct_summing):
+        correct_answer = 'no'
+    elif (random_expression) == substraction and (answer != correct_sub):
+        correct_answer = 'no'
+    elif (random_expression == multiply) and (answer != correct_multiply):
+        correct_answer = 'no'
+    print(correct_answer)
+    return correct_answer
+
+"""
     index = 1
     while index <= 3:
         random_expression = random.choice(expression)
-        print('Question: {0} {1} {2}'.format(a, random_expression, b))
+        print(f'Question: {a} {random_expression} {b}')
         answer = input('Your answer: ')
         correct_answer_sum = True if (correct_summing == answer and random_expression == summing) else False
-        correct_answer_sub = True if (correct_sub == answer and random_expression == substraction) else False
+        correct_answer_sub = True if (correct_subi == answer and random_expression == substraction) else False
         correct_answer_multi = True if (correct_multiply == answer and random_expression == multiply) else False
 
         if (correct_answer_sum is True) or (correct_answer_sub is True) or (correct_answer_multi is True):
@@ -41,4 +55,4 @@ def calc():
             break
     else:
         print('Congratulations, {0}!'.format(name))
-
+""""
