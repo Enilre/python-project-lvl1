@@ -1,14 +1,19 @@
 """Script for brain progression game."""
-from random import randint, choice
+from random import choice, randint
 
 
 def find_num():
-    length_progression = 10
-    random_start_range = randint(0, 1000)
-    random_step_range = randint(1, 10)
-    random_finish_range = random_start_range + (random_step_range * length_progression)
+    """Random progression with random range.
 
-    progression = list(range(random_start_range, random_finish_range, random_step_range))
+    Returns:
+        Return randomly chosen number in progression.
+    """
+    length = 10
+    random_start = randint(0, 1000)
+    random_step = randint(1, 10)
+    random_finish = random_start + (random_step * length)
+
+    progression = list(range(random_start, random_finish, random_step))
     correct_answer = choice(progression)
     hide_random_num = progression.index(correct_answer)
     progression[hide_random_num] = '..'

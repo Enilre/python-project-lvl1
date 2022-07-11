@@ -1,10 +1,10 @@
 """Brain even game."""
 #!/usr/bin/env python
-from brain_games.games.question_answer_even import question_answer  # ask question and take answer from user
+from brain_games.games.question_answer_even import question_answer
 
 
 def main():
-    """Run script."""
+    """Run script for question and answer."""
     question_answer()
 
 

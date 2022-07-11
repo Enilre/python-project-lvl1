@@ -1,7 +1,18 @@
-"""Find prime number."""
+"""Script to find prime number for brain prime game."""
 
 
-def find_prime(num):
+def guess_prime(num):
+    """Guess prime number or not.
+
+    Number is prime if number is divided without rest
+    only by 1 and by number itself.
+
+    Args:
+        num: random number
+
+    Returns:
+        return yes or no if number is prime or not.
+    """
     correct_answer = 'yes'
     number = 2
     while number * number <= num:
