@@ -40,6 +40,14 @@ toml = ["toml"]
 yaml = ["pyyaml"]
 
 [[package]]
+name = "choice"
+version = "0.1"
+description = "Easy request and response GUI for Python"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "colorama"
 version = "0.4.5"
 description = "Cross-platform colored terminal text."
@@ -454,7 +462,7 @@ typing_extensions = ">=3.6,<5.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "2167a0832d38cc9c08ec9144a409d05167fbcad62dffec1ff969360a56179278"
+content-hash = "f6992366d002b7ac4fa9240940052672f2e6c8ce37d32584374ec5fc21094635"
 
 [metadata.files]
 astor = [
@@ -469,6 +477,7 @@ bandit = [
     {file = "bandit-1.7.4-py3-none-any.whl", hash = "sha256:412d3f259dab4077d0e7f0c11f50f650cc7d10db905d98f6520a95a18049658a"},
     {file = "bandit-1.7.4.tar.gz", hash = "sha256:2d63a8c573417bae338962d4b9b06fbc6080f74ecd955a092849e1e65c717bd2"},
 ]
+choice = []
 colorama = [
     {file = "colorama-0.4.5-py2.py3-none-any.whl", hash = "sha256:854bf444933e37f5824ae7bfc1e98d5bce2ebe4160d46b5edf346a89358e99da"},
     {file = "colorama-0.4.5.tar.gz", hash = "sha256:e6c6b4334fc50988a639d9b98aa429a0b57da6e17b9a44f0451f930b6967b7a4"},

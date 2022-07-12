@@ -1,27 +1,22 @@
 """Script for calculation for fisrt and second parameter."""
-#!/usr/bin/env python
+from operator import add, mul, sub
+from random import choice, randint
+
+GAME_INTRO = 'What is the result of the expression?'
+EXPRESSION = (('+', add), ('-', sub), ('*', mul))
 
 
-def calculate(num1, num2, expression):
-    """Calculate resul of random numbers and expression.
+def question_answer():
+    """Calculate result of random numbers and expression.
 
     Args:
-        num1: random number
-        num2: random number
-        expression: random expression
+        No Args
 
     Returns:
         return result of given numbers and expression.
     """
-    if expression == '+':
-        return num1 + num2
-
-    elif expression == '-':
-        return num1 - num2
-
-    elif expression == '*':
-        return num1 * num2
-
-
-if __name__ == '__main__':
-    calculate()
+    num1, num2 = randint(0, 100), randint(0, 100)
+    random_expression = choice(EXPRESSION)
+    question = '{0} {1} {2}'.format(num1, random_expression[0], num2)
+    correct_answer = random_expression[1](num1, num2)
+    return question, correct_answer

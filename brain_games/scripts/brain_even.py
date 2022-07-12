@@ -1,11 +1,14 @@
+#!/usr/bin/env python3
+
 """Brain even game."""
-#!/usr/bin/env python
-from brain_games.games.question_answer_even import question_answer
+
+from brain_games.engine import engine
+from brain_games.games import even
 
 
 def main():
     """Run script for question and answer."""
-    question_answer()
+    engine(even)
 
 
 if __name__ == '__main__':

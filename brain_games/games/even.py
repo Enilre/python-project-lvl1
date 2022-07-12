@@ -1,17 +1,23 @@
 """Guess number is even or not."""
-#!/usr/bin/env python
+
+from random import randint
+
+GAME_INTRO = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def even_or_not(number):
+def question_answer():
     """Guess number is even or not.
 
     Number is even when number divides by 2 with
     no rest.
 
     Args:
-        number: random number
+        No arguments
 
     Returns:
-        Return yes or no if number is even or not.
+        Return correct_answer, question
     """
-    return 'yes' if (number % 2 == 0) else 'no'
+    number = randint(0, 100)
+    question = '{0}'.format(number)
+    correct_answer = 'yes' if (number % 2 == 0) else 'no'
+    return question, correct_answer

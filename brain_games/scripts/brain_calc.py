@@ -1,11 +1,14 @@
+#!/usr/bin/env python3
+
 """Script for the second Game - Brain calc."""
-#!/usr/bin/env python
-from brain_games.games.question_answer_calc import question_answer
+
+from brain_games.engine import engine
+from brain_games.games import calc
 
 
 def main():
     """Run script for question and answer."""
-    question_answer()
+    engine(calc)
 
 
 if __name__ == '__main__':

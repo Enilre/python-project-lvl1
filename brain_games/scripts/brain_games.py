@@ -1,5 +1,7 @@
-"""Script for Brain Games."""
-#!/usr/bin/env python
+#!/usr/bin/env python3
+
+"""Script for greeting user."""
+
 from brain_games.cli import welcome_user
 
 

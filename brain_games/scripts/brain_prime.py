@@ -1,12 +1,14 @@
-"""Brain-prime game."""
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
-from brain_games.games.question_answer import question_answer
+"""Brain-prime game."""
+
+from brain_games.engine import engine
+from brain_games.games import prime
 
 
 def main():
     """Script for question and answer from user."""
-    question_answer()
+    engine(prime)
 
 
 if __name__ == '__main__':
