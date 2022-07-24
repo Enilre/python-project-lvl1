@@ -4,7 +4,7 @@ from random import randint
 GAME_INTRO = 'Find the greatest common divisor of given numbers.'
 
 
-def question_answer():
+def ask_question_get_answer():
     """Find gcd with Euclidean algorithm.
 
     While first number is not equal to second:
@@ -26,4 +26,4 @@ def question_answer():
         else:
             num2 -= num1
     correct_answer = num1
-    return question, correct_answer
+    return question, str(correct_answer)

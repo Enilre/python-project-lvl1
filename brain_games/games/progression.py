@@ -4,7 +4,7 @@ from random import choice, randint
 GAME_INTRO = 'What number is missing in the progression?'
 
 
-def question_answer():
+def ask_question_get_answer():
     """Random progression with random range.
 
     Returns:
@@ -17,4 +17,4 @@ def question_answer():
 
     progression[progression.index(correct_answer)] = '..'
     question = '{0}'.format(' '.join(map(str, progression)))
-    return question, correct_answer
+    return question, str(correct_answer)
